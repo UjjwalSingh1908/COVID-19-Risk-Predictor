@@ -1,4 +1,4 @@
-#COVID-19 RISK PREDICTOR
+#COVID-19 RISK PREDICTOR : 
 During the unlock period, one of the reasons of abrupt
 increase in the number of people affected by COVID-19
 everyday is the negligence of people towards the minute
