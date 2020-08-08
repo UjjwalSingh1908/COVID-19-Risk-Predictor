@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>COVID-19 RISK PREDICTION</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href={{url_for('static', filename = 'style.css')}}>
+  
+  
+</head>
+
+<body>
+      <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                      <a href="#" class="navbar-brand">COVID-19 Risk Predictor</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"> <a href="#"> <span class="glyphicon glyphicon-home"></span> Home </a> </li>
+                        <li> <a href="/res"> <span class="glyphicon glyphicon-file"></span> Result </a> </li>
+                    </ul>
+                </div>
+            </div>
+      </nav>
+    
+
+    <form action="/result" method="post">    
+ <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-4 col-xs-4">
+                  <div class="panel panel-primary">
+                      <div class="panel-heading"><h4> Enter The Details </h4></div>
+                      <div class="panel-body">
+     <!-- Main Input For Receiving Query to our ML -->
+     
+     <div class="form-group">
+    	<label for="age">Age</label> 
+        <input type="text" id="age" name="age" required="true"> 
+     </div>   
+     
+     <div class="form-group">
+        <label for="cough">Cough</label> 
+    	<select id="cough" name="cough"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group"> 
+	<label for="tiredness">Tiredness</label> 
+    	<select id="tiredness" name="tiredness"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="fever">Fever</label> 
+    	<select id="fever" name="fever"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="sore_throat">Sore Throat</label> 
+    	<select id="sore_throat" name="sore_throat"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="aches">Aches</label> 
+    	<select id="aches" name="aches"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="breathlessness">Breathlessness</label> 
+    	<select id="breathlessness" name="breathlessness"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="chest_pain">Chest Pain</label> 
+    	<select id="chest_pain" name="chest_pain"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="loss_of_smell">Loss of Smell</label> 
+    	<select id="loss_of_smell" name="loss_of_smell"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="loss_of_taste">Loss of Taste</label> 
+    	<select id="loss_of_taste" name="loss_of_taste"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="loss_of_speech">Loss of Speech</label> 
+    	<select id="loss_of_speech" name="loss_of_speech"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+     
+     <div class="form-group">
+	<label for="travelling">Travel History</label> 
+    	<select id="travelling" name="travelling"> 
+      	<option value="0">No</option> 
+      	<option value="1">Yes</option> </select>
+     </div>
+                      </div>
+                      <div class="panel-footer"> <button class="btn btn-primary" type="submit">Submit</button> 
+     
+    </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+     
+    
+    </form>
+    
+    <div class="footer">
+      &copy Created By Team Technocrats 
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html> 
+<html>
+    <head>
+        <title>COVID-19 RISK PREDICTION | Result</title>
+         <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+         <link rel="stylesheet" href={{url_for('static', filename = 'style1.css')}}>
+    </head>
+    
+   <body> 
+       <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                      <a href="#" class="navbar-brand">COVID-19 Risk Predictor</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class> <a href="/index"> <span class="glyphicon glyphicon-home"></span> Home </a> </li>
+                        <li class="active"> <a href="#"> <span class="glyphicon glyphicon-file"></span> Result </a> </li>
+                    </ul>
+                </div>
+            </div>
+      </nav>
+    
+       <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-3 col-xs-6">
+                  <div class="panel">
+       <div class="panel-heading"><h2> Health-Risk Status </h2></div>
+                      <div class="panel-body">
+                          <h2 id="p">{{ prediction }}</h2> 
+                      </div>
+        <div class="panel-footer">
+		<ul>
+		  <li>{{ b1 }}</li>
+ 		  <li>{{ b2 }}</li>
+		  <li>{{ b3 }}</li>
+		  <li>{{ b4 }}</li>
+		  <li>{{ b5 }}</li>
+		</div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+       
+       
+        <div class="footer">
+      &copy Created By Team Technocrats
+    </div>
+     
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+
+   </body> 
+</html> 
